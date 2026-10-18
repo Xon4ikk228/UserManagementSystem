@@ -1,14 +1,13 @@
 ﻿using System.Collections.Generic;
 
-namespace UserManagementSystem
+public class UserManager
 {
-    public class UserManager
-    {
-        private List<string> _users = new List<string>();
+    private List<string> _users = new List<string>();
+    private int _count;
 
-        public void AddUser(string username)
-        {
-            _users.Add(username);
-        }
+    public void AddUser(string username)
+    {
+        _users.Add(username);
+        _count++;
     }
 }
