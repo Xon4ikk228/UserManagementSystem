@@ -10,4 +10,9 @@ public class UserManager
         _users.Add(username);
         _count++;
     }
+
+    public bool RemoveUser(string username)
+    {
+        return _users.Remove(username);
+    }
 }
